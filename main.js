@@ -7,13 +7,15 @@ function ggeett ()  {
   }
 
 async function myFunc(length) {
-    let result= " ";
-    let i = 0;
-    while(i < length) {
+	let start = Date.now(),
+    	result = " ",
+    	i = 0;
+     while(i < length) {
         result += await ggeett();
       i++;
     }
-    return console.log(result + ' За ' + length * 50 + ' ms') ;
+    let	end = Date.now();
+    return console.log(result + ' За ' + (end - start) + ' ms') ;
   }
 
 myFunc(4);
