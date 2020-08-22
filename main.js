@@ -13,7 +13,7 @@ async function myFunc(length) {
         result += await ggeett();
       i++;
     }
-    return console.log(result);
+    return console.log(result + ' За ' + length * 50 + ' ms') ;
   }
 
 myFunc(4);
