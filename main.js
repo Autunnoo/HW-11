@@ -19,15 +19,3 @@ async function myFunc(length) {
   }
 
 myFunc(4);
-
-
-
-
-
-
-
-
-
-
-
-
